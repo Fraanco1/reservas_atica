@@ -1,0 +1,215 @@
+html {
+    height:100%;
+}
+
+body {
+    margin:0;
+    height:100%;
+    overflow-x: hidden;
+}
+
+#contenido {
+    margin:0px;
+    min-height:100%;
+}
+
+.reservar {
+    position:fixed;
+    transform:translateX(0%);
+    top:0px;
+    width:30%;
+    height:100%;
+    background-color:#f5f5f5;
+    box-shadow: 0px 0px 50px #585a5c;
+    transition: transform ease-in .2s;
+}
+
+.hidden {
+    transform: translateX(-85%);
+}
+
+.reservar form {
+    text-align:center;
+    margin:0px auto 0px auto;
+    width:95%;
+    height:50%;
+}
+
+.reservar select {
+    height:25px;
+}
+
+.reservar input[type="submit"] {
+    margin-top: 30px;
+    width:100px;
+    height:30px;
+    border: 2px solid rgb(138, 33, 33);
+    background: white;
+    transition: ease-in-out .2s;
+}
+
+.reservar input[type="submit"]:hover {
+    width:110px;
+    height:40px;
+}
+
+.reservar input[type="submit"]:active {
+    width:100px;
+    height:30px;
+}
+
+#logout {
+    margin-top: 175px;
+    height:40px;
+    text-align:center;
+    width:100%;
+}
+
+#logout input {
+    border: 2px solid rgb(138, 33, 33);
+    width:80px;
+    height:35px;
+    background: white;
+    transition: ease-in-out .2s;
+}
+
+#logout input:hover {
+    width:90px;
+    height:45px;
+}
+
+#logout input:active {
+    width:80px;
+    height:35px;
+}
+
+label {
+    display:block;
+    margin:10px;
+}
+
+h1 {
+    text-align:center;
+    font-family:monospace;
+}
+
+.reservas {
+    width:70%;
+    height:100%;
+    float:right;
+}
+
+.centrar {
+    margin: 0px auto 0px auto;
+    float:none;
+}
+
+#reservas-tabla {
+    text-align:center;
+    width:90%;
+    margin: 0px auto 10px auto;
+}
+
+table {
+    border-spacing:3px;
+}
+
+table,tr,td {
+    font-family: monospace;
+
+}
+
+tr {
+    background-color: #ebebeb;
+}
+
+tr,td {
+    padding:8px;
+}
+
+th {
+    padding:10px;
+}
+
+.even {
+    background-color:#f8f8f8;
+}
+
+.table-header {
+    padding:10px;
+    background-color:#bbbbbb;
+}
+
+#errorReserva {
+    margin: 0px auto 0px auto;
+    width:120px;
+    font-weight:bold;
+    margin-top:20px;
+    color:red;
+    font-family:monospace;
+}
+
+#button-container {
+    position:relative;
+    margin:auto;
+    width: 70%;
+    text-align:center;
+}
+
+#button-container button {
+    width:35px;
+    height:35px;
+    margin:5px;
+    background-color:white;
+    border: 2px solid #9c2b2b;
+    transition: ease-in-out .2s;
+    outline:none;
+}
+
+#button-container button:hover {
+    width:39px;
+    height:39px;
+}
+
+#button-container button:active {
+    width:35px;
+    height:35px;
+}
+
+.remove {
+    display:none;
+}
+
+.close-panel {
+    position:absolute;
+    top:15px;
+    right:20px;
+    width:30px;
+    height:30px;
+    stroke: black;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 5;
+    transition:ease-in-out .2s;
+}
+
+.close-panel:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+@media screen and (max-width:600px) {
+    html,body,#contenido {
+        overflow:auto;
+    }
+
+    .reservar {
+        width:100%;
+    }
+
+    #button-container {
+        display:none;
+    }
+}
